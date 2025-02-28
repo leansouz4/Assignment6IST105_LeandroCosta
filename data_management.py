@@ -25,6 +25,7 @@ def process_data(values):
     <p>Positive count is {is_even}</p>
     """
 
+
 form = cgi.FieldStorage()
 values = [form.getvalue(param, "") for param in ["a", "b", "c", "d", "e"]]
 print("Content-type: text/html\n")
